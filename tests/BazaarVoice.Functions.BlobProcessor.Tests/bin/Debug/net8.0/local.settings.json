@@ -1,0 +1,17 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "<PLACEHOLDER: Azure Storage Connection String for WebJobs runtime>",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "BazaarVoiceStorageConnection": "<PLACEHOLDER: Azure Storage Connection String for BazaarVoice container>",
+    "BazaarVoiceStorageUri": "<PLACEHOLDER: https://<your-storage-account>.blob.core.windows.net>",
+    "ServiceBusConnection": "<PLACEHOLDER: Service Bus Connection String>",
+    "ServiceBusNamespace": "<PLACEHOLDER: sb-bazaarvoice-loyalty-{env}.servicebus.windows.net>",
+    "UseManagedIdentity": "false",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "<PLACEHOLDER: Application Insights Instrumentation Key>",
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "<PLACEHOLDER: Application Insights Connection String>"
+  },
+  "Host": {
+    "LocalHttpPort": 7071
+  }
+}
