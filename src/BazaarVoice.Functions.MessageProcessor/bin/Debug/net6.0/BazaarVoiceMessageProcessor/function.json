@@ -1,0 +1,18 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions.Generator-4.2.0",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "serviceBusTrigger",
+      "connection": "ServiceBusConnection",
+      "topicName": "sbt-bazaarvoice-records",
+      "subscriptionName": "sbs-bazaarvoice-loyalty",
+      "isSessionsEnabled": false,
+      "autoCompleteMessages": true,
+      "name": "message"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/BazaarVoice.Functions.MessageProcessor.dll",
+  "entryPoint": "BazaarVoice.Functions.MessageProcessor.Functions.ServiceBusTriggerFunction.RunAsync"
+}
