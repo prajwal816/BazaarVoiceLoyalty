@@ -166,6 +166,10 @@
               "target": "Package",
               "version": "[7.17.5, )"
             },
+            "Microsoft.ApplicationInsights.WorkerService": {
+              "target": "Package",
+              "version": "[2.22.0, )"
+            },
             "Microsoft.Azure.Cosmos": {
               "target": "Package",
               "version": "[3.37.1, )"

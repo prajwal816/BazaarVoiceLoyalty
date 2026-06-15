@@ -1,0 +1,23 @@
+[
+  {
+    "name": "BazaarVoiceBlobTrigger",
+    "scriptFile": "BazaarVoice.Functions.BlobProcessor.dll",
+    "entryPoint": "BazaarVoice.Functions.BlobProcessor.Functions.BlobTriggerFunction.RunAsync",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "blobStream",
+        "direction": "In",
+        "type": "blobTrigger",
+        "path": "bazaarvoice/incoming/fromBazaarVoice/{fileName}",
+        "connection": "BazaarVoiceStorageConnection",
+        "properties": {
+          "supportsDeferredBinding": "True"
+        }
+      }
+    ]
+  }
+]

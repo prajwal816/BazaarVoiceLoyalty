@@ -170,6 +170,10 @@
               "target": "Package",
               "version": "[12.19.1, )"
             },
+            "Microsoft.ApplicationInsights.WorkerService": {
+              "target": "Package",
+              "version": "[2.22.0, )"
+            },
             "Microsoft.Azure.Functions.Worker": {
               "target": "Package",
               "version": "[1.21.0, )"
@@ -287,6 +291,10 @@
             "Azure.Messaging.ServiceBus": {
               "target": "Package",
               "version": "[7.17.5, )"
+            },
+            "Microsoft.ApplicationInsights.WorkerService": {
+              "target": "Package",
+              "version": "[2.22.0, )"
             },
             "Microsoft.Azure.Cosmos": {
               "target": "Package",

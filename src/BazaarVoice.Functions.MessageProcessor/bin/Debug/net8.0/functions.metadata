@@ -1,0 +1,25 @@
+[
+  {
+    "name": "BazaarVoiceMessageProcessor",
+    "scriptFile": "BazaarVoice.Functions.MessageProcessor.dll",
+    "entryPoint": "BazaarVoice.Functions.MessageProcessor.Functions.ServiceBusTriggerFunction.RunAsync",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "message",
+        "direction": "In",
+        "type": "serviceBusTrigger",
+        "topicName": "sbt-bazaarvoice-records",
+        "subscriptionName": "sbs-bazaarvoice-loyalty",
+        "connection": "ServiceBusConnection",
+        "cardinality": "One",
+        "properties": {
+          "supportsDeferredBinding": "True"
+        }
+      }
+    ]
+  }
+]
