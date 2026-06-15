@@ -1,0 +1,13 @@
+C:\Stored\All Files\Coding\Internships\NTE\Project-work\src\BazaarVoice.Common\bin\Debug\net8.0\BazaarVoice.Common.deps.json
+C:\Stored\All Files\Coding\Internships\NTE\Project-work\src\BazaarVoice.Common\bin\Debug\net8.0\BazaarVoice.Common.dll
+C:\Stored\All Files\Coding\Internships\NTE\Project-work\src\BazaarVoice.Common\bin\Debug\net8.0\BazaarVoice.Common.pdb
+C:\Stored\All Files\Coding\Internships\NTE\Project-work\src\BazaarVoice.Common\obj\Debug\net8.0\BazaarVoice.Common.csproj.AssemblyReference.cache
+C:\Stored\All Files\Coding\Internships\NTE\Project-work\src\BazaarVoice.Common\obj\Debug\net8.0\BazaarVoice.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Stored\All Files\Coding\Internships\NTE\Project-work\src\BazaarVoice.Common\obj\Debug\net8.0\BazaarVoice.Common.AssemblyInfoInputs.cache
+C:\Stored\All Files\Coding\Internships\NTE\Project-work\src\BazaarVoice.Common\obj\Debug\net8.0\BazaarVoice.Common.AssemblyInfo.cs
+C:\Stored\All Files\Coding\Internships\NTE\Project-work\src\BazaarVoice.Common\obj\Debug\net8.0\BazaarVoice.Common.csproj.CoreCompileInputs.cache
+C:\Stored\All Files\Coding\Internships\NTE\Project-work\src\BazaarVoice.Common\obj\Debug\net8.0\BazaarVoice.Common.sourcelink.json
+C:\Stored\All Files\Coding\Internships\NTE\Project-work\src\BazaarVoice.Common\obj\Debug\net8.0\BazaarVoice.Common.dll
+C:\Stored\All Files\Coding\Internships\NTE\Project-work\src\BazaarVoice.Common\obj\Debug\net8.0\refint\BazaarVoice.Common.dll
+C:\Stored\All Files\Coding\Internships\NTE\Project-work\src\BazaarVoice.Common\obj\Debug\net8.0\BazaarVoice.Common.pdb
+C:\Stored\All Files\Coding\Internships\NTE\Project-work\src\BazaarVoice.Common\obj\Debug\net8.0\ref\BazaarVoice.Common.dll

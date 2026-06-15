@@ -22,16 +22,16 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "framework": "net6.0",
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -48,17 +48,17 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net6.0": {
-          "framework": "net6.0",
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.Extensions.Http.Polly": {
               "target": "Package",
-              "version": "[6.0.25, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[8.0.1, )"
             },
             "Polly": {
               "target": "Package",
@@ -66,7 +66,7 @@
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[8.0.4, )"
             }
           },
           "imports": [
@@ -83,15 +83,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[8.0.27, 8.0.27]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[8.0.27, 8.0.27]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[8.0.27, 8.0.27]"
             }
           ],
           "frameworkReferences": {
@@ -99,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -121,16 +121,16 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "framework": "net6.0",
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
             "projectReferences": {
               "C:\\Stored\\All Files\\Coding\\Internships\\NTE\\Project-work\\src\\BazaarVoice.Common\\BazaarVoice.Common.csproj": {
                 "projectPath": "C:\\Stored\\All Files\\Coding\\Internships\\NTE\\Project-work\\src\\BazaarVoice.Common\\BazaarVoice.Common.csproj"
@@ -154,49 +154,49 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net6.0": {
-          "framework": "net6.0",
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
           "dependencies": {
             "Azure.Identity": {
               "target": "Package",
-              "version": "[1.11.0, )"
+              "version": "[1.12.0, )"
             },
             "Azure.Messaging.ServiceBus": {
               "target": "Package",
               "version": "[7.17.5, )"
             },
-            "Microsoft.ApplicationInsights.WorkerService": {
-              "target": "Package",
-              "version": "[2.22.0, )"
-            },
             "Microsoft.Azure.Cosmos": {
               "target": "Package",
               "version": "[3.37.1, )"
             },
-            "Microsoft.Azure.Functions.Extensions": {
+            "Microsoft.Azure.Functions.Worker": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[1.21.0, )"
             },
-            "Microsoft.Azure.WebJobs.Extensions.ServiceBus": {
+            "Microsoft.Azure.Functions.Worker.ApplicationInsights": {
               "target": "Package",
-              "version": "[5.13.6, )"
+              "version": "[1.2.0, )"
+            },
+            "Microsoft.Azure.Functions.Worker.Extensions.ServiceBus": {
+              "target": "Package",
+              "version": "[5.16.0, )"
+            },
+            "Microsoft.Azure.Functions.Worker.Sdk": {
+              "target": "Package",
+              "version": "[1.17.2, )"
             },
             "Microsoft.Extensions.Caching.Memory": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Extensions.Http.Polly": {
               "target": "Package",
-              "version": "[6.0.25, )"
-            },
-            "Microsoft.NET.Sdk.Functions": {
-              "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[8.0.8, )"
             }
           },
           "imports": [
@@ -213,15 +213,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[8.0.27, 8.0.27]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.27, 8.0.27]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[8.0.27, 8.0.27]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[8.0.27, 8.0.27]"
             }
           ],
           "frameworkReferences": {
@@ -229,7 +233,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -251,16 +255,16 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "framework": "net6.0",
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
             "projectReferences": {
               "C:\\Stored\\All Files\\Coding\\Internships\\NTE\\Project-work\\src\\BazaarVoice.Common\\BazaarVoice.Common.csproj": {
                 "projectPath": "C:\\Stored\\All Files\\Coding\\Internships\\NTE\\Project-work\\src\\BazaarVoice.Common\\BazaarVoice.Common.csproj"
@@ -281,9 +285,9 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net6.0": {
-          "framework": "net6.0",
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
           "dependencies": {
             "Azure.Messaging.ServiceBus": {
               "target": "Package",
@@ -299,11 +303,11 @@
             },
             "Microsoft.Extensions.Http.Polly": {
               "target": "Package",
-              "version": "[6.0.25, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[8.0.1, )"
             },
             "Polly": {
               "target": "Package",
@@ -324,15 +328,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[8.0.27, 8.0.27]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[8.0.27, 8.0.27]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "version": "[8.0.27, 8.0.27]"
             }
           ],
           "frameworkReferences": {
@@ -340,7 +344,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
