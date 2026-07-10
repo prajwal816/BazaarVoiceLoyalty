@@ -1,6 +1,0 @@
-{
-  "extensions":[
-    { "name": "Startup", "typeName":"BazaarVoice.Functions.BlobProcessor.Startup, BazaarVoice.Functions.BlobProcessor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"},
-    { "name": "AzureStorageBlobs", "typeName":"Microsoft.Azure.WebJobs.Extensions.Storage.AzureStorageBlobsWebJobsStartup, Microsoft.Azure.WebJobs.Extensions.Storage.Blobs, Version=5.3.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8"}
-  ]
-}
