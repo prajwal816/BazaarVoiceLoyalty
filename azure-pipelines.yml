@@ -1,0 +1,49 @@
+                
+# ASP.NET Core (.NET Framework)
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+resources:
+  repositories:
+  - repository: templates
+    type: git
+    name: 'Integrations/Integrations-IaC'
+    ref: develop
+
+trigger:
+    - feature*
+    - develop
+    - test
+    - preprod
+    - main
+
+variables:
+    - ${{ if startsWith( variables['Build.SourceBranchName'], 'feature' ) }}:
+      - group: nte-int-dev-loyalty-bazaarvoice
+    - ${{ if eq( variables['Build.SourceBranchName'], 'develop' ) }}:
+      - group: nte-int-dev-loyalty-bazaarvoice
+    - ${{ if eq( variables['Build.SourceBranchName'], 'test' ) }}:
+      - group: nte-int-test-loyalty-bazaarvoice
+    - ${{ if eq( variables['Build.SourceBranchName'], 'preprod' ) }}:
+      - group: nte-int-preprod-loyalty-bazaarvoice
+    - ${{ if eq( variables['Build.SourceBranchName'], 'main' ) }}:
+      - group: nte-int-main-loyalty-bazaarvoice
+
+stages:
+- template: Templates/template-build.yml@templates
+  parameters:
+    ProjectFileRelativePath: '**/Bazaarvoice/*.csproj'
+    SolnFileRelativePath: '**/*.sln'
+    TestProjectFileRelativePath: '**/**/*Tests.csproj'
+    VMImage: 'windows-latest'
+    PublishFolder: 'release/LoyaltyBazaarVoice'
+    ArtifactFolderName: 'drop'
+    ArchiveFilePath: 'LoyaltyBazaarVoice'
+
+- template: Templates/template-deploy.yml@templates
+  parameters:
+    VMImage: 'windows-latest'
+    ArtifactFolderName: 'drop'
+    AppSettings: '-AppConfigEndpoint $(AppConfigurationConnectionString) -APPINSIGHTS_INSTRUMENTATIONKEY $(InstrumentationKey) -AZURE_FUNCTIONS_ENVIRONMENT $(NTEEnvironmentName)'
+ 
